@@ -23,3 +23,20 @@ fruits_to_show = my_fruit_list.loc[fruits_selected] #agarra las frutas seleccion
 
 # Display the table on the page.
 streamlit.dataframe(fruits_to_show)
+
+#Lesson 9 snowflake course
+#importing another pyhton package library called request
+
+import requests
+fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
+streamlit.text(fruityvice_response)
+
+
+
+
+
+
+
+
+
+

@@ -64,6 +64,13 @@ my_data_rows = my_cur.fetchall()
 streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
+#adding a second text entry box
+#add a text extry box and send the input to fruityvice as part of the api call
+add_my_fruit = streamlit.text_input('What fruit would you like to add?','Jackfruit')
+streamlit.write('Thanks for adding ', add_my_fruit)
+
+
+
 
 
 
